@@ -9,5 +9,7 @@ You can find the current app that I need help changing to Golang in the folder `
 
 ## Code for Today
 Right now we have an app writing in Python.  This app takes the files from 
+- The methods we have in this python application are listdir, chdir, strip, getcwd and rename.  You can find similar methods on the golang website www.golang.com or https://www.tutorialspoint.com/go/index.htm.  If you use these resources to help you solve this problem please let us know.  Thank you  
 
+Happy coding.
 ![screenshot_1](https://user-images.githubusercontent.com/21030885/39087051-a23c7132-45d5-11e8-8e42-ad79fd9181fb.jpg)
