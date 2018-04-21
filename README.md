@@ -9,3 +9,5 @@ You can find the current app that I need help changing to Golang in the folder `
 
 ## Code for Today
 Right now we have an app writing in Python.  This app takes the files from 
+
+![screenshot_1](https://user-images.githubusercontent.com/21030885/39087051-a23c7132-45d5-11e8-8e42-ad79fd9181fb.jpg)
