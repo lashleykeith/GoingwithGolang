@@ -1,4 +1,4 @@
-# GoingwithGolang
+# GGoingwithGolang
 
 ## What is the purpose of this project
 This is a golang project that is opensource with Golang.  The purpose of this project is to take preexisiting apps written in Python and PHP to turn them into Golang apps.  I first I want to change all the programs that I made in the Udacity Full Stack Nanodegree Course.  
