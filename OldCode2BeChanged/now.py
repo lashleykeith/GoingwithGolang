@@ -1,27 +1,17 @@
 import os
-
-'''
-old_string = "file2344.txt"
-to_remove = "0123456789"
-table = str.maketrans("", "", to_remove)
-new_string = old_string.translate(table)
-print(new_string)
-'''
-'''
-old_string = "file52.txt"
-to_remove = "0123456789"
-table = {ord(char): None for char in to_remove}
-new_string = old_string.translate(table)
-print(new_string)
-#works int he commandline
-'''
-
 def rename_files():
-	#(1) get file names from a folder
-	file_list = os.listdir(r"C:\Users\g\Desktop\prank")
+	#(1) get files names from a folder
+	file_list = os.listdir(r"C:\\Users\\g\\Desktop\\Fun\\udacity\\foundationsofpython\\07finalrenamingapp\\prank")
 	print(file_list)
+	saved_path = os.getcwd()
+	print (saved_path)
+	os.chdir(r"C:\\Users\\g\\Desktop\\Fun\\udacity\\foundationsofpython\\07finalrenamingapp\\prank")
 
-	#(2) for each file, rename filename
+	#2 rename all files names in folder
 	for file_name in file_list:
-		os.rename(file_name,)
+		print ("Old Name - " +file_name)
+		print ("New Name - " +file_name.strip("0123456789"))
+		os.rename(file_name,file_name.strip("0123456789"))
+	os.chdir(saved_path)
+
 rename_files()
