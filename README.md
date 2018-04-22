@@ -14,5 +14,8 @@ Right now we have an app writing in Python.  This app takes the files from
 Happy coding.
 ![screenshot_1](https://user-images.githubusercontent.com/21030885/39087051-a23c7132-45d5-11e8-8e42-ad79fd9181fb.jpg)
 
-This is the Golang code we are working on.
-![screenshot_7](https://user-images.githubusercontent.com/21030885/39095387-c1d2ccd0-467a-11e8-9a31-b193d1c083ef.jpg)
+
+
+
+##This is the Golang code we are working on.
+![screenshot_8](https://user-images.githubusercontent.com/21030885/39095453-8af06adc-467b-11e8-8883-ed7df4d41f30.jpg)
