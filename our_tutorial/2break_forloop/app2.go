@@ -16,9 +16,9 @@ func main() {
 		break_count := 0
 		fmt.Println("The time is now ", time.Now())
 		for break_count < total_breaks {
-			delaySecond(10)
+			delaySecond(3)
 			open.RunWith("https://www.youtube.com/watch?v=neV3EPgvZ3g", "firefox")	
-			break_count += break_count
+			break_count = break_count + 1
 		}
 
 }
