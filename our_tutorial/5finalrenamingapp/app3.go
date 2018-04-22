@@ -7,7 +7,8 @@ import (
     "regexp"
 )
 func readCurrentDir() {
-    file, err := os.Open("C:\\Users\\g\\Desktop\\prank")
+    dir := "C:\\Users\\g\\Desktop\\prank"
+    file, err := os.Open(dir)
     if err != nil {
         log.Fatalf("failed opening directory: %s", err)
     }
@@ -15,15 +16,20 @@ func readCurrentDir() {
  
     list,_ := file.Readdirnames(0) // 0 to read all files and folders
     for _, name := range list {
-        fmt.Println("Old Name - ", name)
+        oldName := name
+        fmt.Println("Old Name - ", oldName)
         re := regexp.MustCompile( "[^A-za-z]" )
-        newName := re.ReplaceAllString( name, " ")
-        fmt.Println("New Name - ", newName)
+        newName := re.ReplaceAllString( oldName, " ")
+        fmt.Println("New Name - ", newName)        
+        os.Rename(dir+oldName, dir+newName)
+        fmt.Println("File names have been changed")
+
     }
 }
  
 func main() {
     readCurrentDir()
+
 }
 
 
