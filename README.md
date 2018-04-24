@@ -7,5 +7,7 @@ This is a golang project that is opensource with Golang.  The purpose of this pr
 ## How can you contribute
 You can find the current app that I need help changing to Golang in the folder `OldCode2BeChanged`.  This app will be written in Python for now but later we might use other languages.  Your role is to take the Python app and rewrite it in Golang.  As people progress in solving this task I will upload the best attempt of this in the folder `SolveThisNow`.  When this attempt is completed I will add it to the `our_tutorial` folder.  That way we will begin to build our codebase in Golang from easy to more complex applications.
 
+
+
 ## We will be back on April 29
-![screenshot_9](https://user-images.githubusercontent.com/21030885/39179664-c5056e50-47ef-11e8-8a32-7922630816b8.jpg
+![screenshot_9](https://user-images.githubusercontent.com/21030885/39179664-c5056e50-47ef-11e8-8a32-7922630816b8.jpg)
