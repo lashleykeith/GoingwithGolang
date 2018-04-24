@@ -1,36 +1,42 @@
 package main
- 
+
 import (
-    "log"
-    "os"
-    "fmt"
-    "regexp"
+	"fmt"
+	"log"
+	"os"
+	"regexp"
 )
-func readCurrentDir() {
-    dir := "C:\\Users\\g\\Desktop\\prank"
-    file, err := os.Open(dir)
-    if err != nil {
-        log.Fatalf("failed opening directory: %s", err)
-    }
-    defer file.Close()
- 
-    list,_ := file.Readdirnames(0) // 0 to read all files and folders
-    for _, name := range list {
-        oldName := name
-        fmt.Println("Old Name - ", oldName)
-        re := regexp.MustCompile( "[^A-za-z]" )
-        newName := re.ReplaceAllString( oldName, " ")
-        fmt.Println("New Name - ", newName)        
-        os.Rename(dir+oldName, dir+newName)
-        fmt.Println("File names have been changed")
 
-    }
+const dir = "./prank/"
+
+func handleErr(err error) {
+	if err != nil {
+		log.Fatalln(err.Error())
+	}
 }
- 
+
+func changeFileNames() {
+	re := regexp.MustCompile("[^A-za-z.]")
+
+	file, err := os.Open(dir)
+	handleErr(err)
+	defer file.Close()
+
+	list, err := file.Readdirnames(0) // 0 to read all files and folders
+	handleErr(err)
+
+	for _, name := range list {
+		fmt.Println("\nOld Name: ", name)
+		newName := re.ReplaceAllString(name, " ")
+		fmt.Println("New Name: ", newName)
+		os.Rename(dir+name, dir+newName)
+	}
+
+	fmt.Println("File names have been changed")
+}
+
 func main() {
-    readCurrentDir()
-
+	changeFileNames()
 }
-
 
 //http://www.golangprograms.com/how-to-read-names-of-all-files-and-folders-in-current-directory.html
