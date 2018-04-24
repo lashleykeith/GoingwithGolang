@@ -16,7 +16,7 @@ func handleErr(err error) {
 }
 
 func changeFileNames() {
-	re := regexp.MustCompile("[^A-za-z]")
+	re := regexp.MustCompile("[^A-za-z.]")
 
 	file, err := os.Open(dir)
 	handleErr(err)
