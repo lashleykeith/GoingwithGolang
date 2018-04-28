@@ -7,6 +7,9 @@ This is a golang project that is opensource with Golang.  The purpose of this pr
 ## How can you contribute
 You can find the current app that I need help changing to Golang in the folder `OldCode2BeChanged`.  This app will be written in Python for now but later we might use other languages.  Your role is to take the Python app and rewrite it in Golang.  As people progress in solving this task I will upload the best attempt of this in the folder `SolveThisNow`.  When this attempt is completed I will add it to the `our_tutorial` folder.  That way we will begin to build our codebase in Golang from easy to more complex applications.
 
+## Solve This Now
+If you go to the folder `SolveThisNow` you will see a folder titled `1chess_structure`.  It is a chess board written in Python in Tkinter.  What we need to do is change this app to do the same thing in Golang.  We need to make a gui app and all it has to do is give the name of the location you square that was licked on. 
+
 
 
 ## We will be back on May 6
