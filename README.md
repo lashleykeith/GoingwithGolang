@@ -10,7 +10,8 @@ You can find the current app that I need help changing to Golang in the folder `
 ## Solve This Now
 If you go to the folder `SolveThisNow` you will see a folder titled `1chess_structure`.  It is a chess board written in Python in Tkinter.  What we need to do is change this app to do the same thing in Golang.  We need to make a gui app and all it has to do is give the name of the location you square that was licked on. 
 
-
+## YouTube
+You can follow us on YouTube here https://www.youtube.com/watch?v=ei7_cv37lUo&list=PL5UH0nTcFlGil3Xpr5T1ElQsYZI8FMVuj&index=3
 
 ## We will be back on May 6
 ![screenshot_14](https://user-images.githubusercontent.com/21030885/39399466-0129da26-4b59-11e8-924c-a59e451d76b0.jpg)
